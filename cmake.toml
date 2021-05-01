@@ -12,3 +12,8 @@ type = "executable"
 sources = [
     "src/hello_world.cpp",
 ]
+[target.Rekenuh]
+type = "executable"
+sources = [
+    "src/Rekenuh.cpp",
+]
