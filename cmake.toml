@@ -12,8 +12,15 @@ type = "executable"
 sources = [
     "src/hello_world.cpp",
 ]
+
 [target.Rekenuh]
 type = "executable"
 sources = [
     "src/Rekenuh.cpp",
+]
+
+[target.Wiskunde_cheater]
+type = "executable"
+sources = [
+    "src/Wiskunde_cheater.cpp",
 ]
