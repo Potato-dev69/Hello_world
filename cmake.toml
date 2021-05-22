@@ -19,8 +19,8 @@ sources = [
     "src/Rekenuh.cpp",
 ]
 
-[target.Wiskunde_cheater]
+[target.Login]
 type = "executable"
 sources = [
-    "src/Wiskunde_cheater.cpp",
+    "src/Login.cpp",
 ]

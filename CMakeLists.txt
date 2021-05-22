@@ -57,3 +57,18 @@ endif()
 
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${Rekenuh_SOURCES})
 
+# Target Login
+set(Login_SOURCES
+	"src/Login.cpp"
+	cmake.toml
+)
+
+add_executable(Login ${Login_SOURCES})
+
+get_directory_property(CMKR_VS_STARTUP_PROJECT DIRECTORY ${PROJECT_SOURCE_DIR} DEFINITION VS_STARTUP_PROJECT)
+if(NOT CMKR_VS_STARTUP_PROJECT)
+	set_property(DIRECTORY ${PROJECT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT Login)
+endif()
+
+source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${Login_SOURCES})
+
